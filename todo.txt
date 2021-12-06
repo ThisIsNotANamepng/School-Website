@@ -1,0 +1,15 @@
+add a csp
+
+make sure development php server is safe
+
+make pwa
+
+Make sure database is safe
+
+xss protection
+
+Add 404 page
+
+Add a schedule page, user enters schedule and classs are stored in cookies, it woould plan out the day in the form of a map
+
+3d printed tactile maps for the blind?

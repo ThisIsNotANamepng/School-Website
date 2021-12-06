@@ -1,0 +1,27 @@
+<pages>
+    <school>
+        <name>First Last</name>
+        <room>101</room>
+    </school>
+    <school>
+        <name>Bob Dylan</name>
+        <room>150</room>
+    </school>
+    <school>
+        <name>Your Mom</name>
+        <room>123</room>
+    </school>
+    <school>
+        <name>Firstname Lastname </name>
+        <room>102</room>
+    </school>
+    <school>
+        <name>Bobert McCallister</name>
+        <room>155</room>
+    </school>
+    <school>
+        <name>John Doe</name>
+        <room>174</room>
+    </school>
+    
+</pages>

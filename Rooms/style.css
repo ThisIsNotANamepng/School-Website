@@ -1,0 +1,61 @@
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+
+@font-face {
+  font-family: Poppins;
+  src: url(Poppins-Medium.ttf);
+}
+
+body {
+  background-color: 67548c;
+}
+
+h1{
+  font-family: Poppins;
+  text-align: center;
+  color: F0D265;
+
+}
+
+h2{
+  font-family: Poppins;
+}
+
+h3{
+  font-family: Poppins;
+}
+
+p{
+  font-family: Poppins;
+}
+
+.se{
+  text-align: center;
+}
+
+#search{
+  width: 90%;
+  height: 40px;
+  padding:8px 15px;
+  background:rgba(50, 50, 50, 0.2);
+  border:0px solid #dbdbdb;
+  color: EDF2F4;
+  float:center;
+
+}
+
+#results{
+  color: 302A50;
+  text-decoration: none;
+  padding-left: 50px;
+  padding-right: 50px;
+  float: left;
+  background-color: F0D265;
+  font-size: 32px;
+
+}
+
