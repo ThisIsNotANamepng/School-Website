@@ -22,5 +22,17 @@
 </form>
 </div>
 
+
+
+
+
+
+
+<p class='navbar' style="color:powderblue;" ><a href="https://github.com/Thisisntarelname/phpajaxxml">Source | </a><a href="forms.google.com">Report an error | </a><a href="/about.html">Made by Fake Name and Name Fake</a></p>
+<br>
+
+
+
+
 </body>
 </html>

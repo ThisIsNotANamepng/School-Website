@@ -14,3 +14,28 @@ Add a schedule page, user enters schedule and classs are stored in cookies, it w
 
 3d printed tactile maps for the blind?
 
+Make it easily downloadable (internet at school is iffy) 
+
+try to make it a small size so it downloads quickly even with shitty connection
+
+2d map 
+
+3d map?
+
+button to toggle maps
+
+hallway names
+
+A way to show a path through the school to a selected room(Pathfinding Algorithim)
+
+an easy way to edit so that if/when teachers leave, we can easily update room information (also in case of maintenance, closures, and accidential misinformation)
+
+Make it open source. Add a link to source code at bottom of page
+
+make it easy to navigate
+
+Make a place where it's easy to point out mistakes (typos, things not working, misinformation etc)
+
+a settings menu where you can toggle cirtain things off like the way the door swings
+
+add where you can get food for lunch- lunch menus?
