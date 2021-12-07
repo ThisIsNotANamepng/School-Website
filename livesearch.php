@@ -7,8 +7,8 @@ $x=$xmlDoc->getElementsByTagName('school');
 //get the q parameter from URL
 $q=$_GET["q"];
 
-//lookup all links from the xml file if length of q>0
-if (strlen($q)>0) {
+//lookup all links from the xml file if length of q>1- I made it >1 becasue if it was >0 it would flood the page with options
+if (strlen($q)>1) {
   $hint="";
   for($i=0; $i<($x->length); $i++) {
     $y=$x->item($i)->getElementsByTagName('name');

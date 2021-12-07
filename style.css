@@ -35,6 +35,7 @@ p{
 
 .se{
   text-align: center;
+
 }
 
 #search{
@@ -48,26 +49,27 @@ p{
 
 }
 
+#livesearch{
+  font-family: Poppins;
+}
 #results{
   color: 302A50;
   text-decoration: none;
-  padding-left: 50px;
-  padding-right: 50px;
+  width: 98%;
+  padding-left: 2%;
   float: left;
   background-color: F0D265;
-  font-size: 2em;
-
+  font-size: 1.5em;
+  font-family: Poppins;
 }
 
 .navbar {
   text-decoration: none;
   color: aliceblue;
-  position: fixed;
   text-align: center;
-  bottom: 0;
-  width: 100%;
   font-size: 0.75em;
-
+  position: absolute;
+  width: 100%;
 }
 
 a:link, a:visited {
