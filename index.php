@@ -1,5 +1,8 @@
 <?php
+	//header("Content-Security-Policy: default-src 'self'; img-src https://*; child-src 'none'; frame-ancestors 'self'; base-uri 'self';  form-action 'self';  font-src: 'self';");
+
 ?>
+
 <html>
 <head>
   <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
@@ -7,9 +10,10 @@
   <meta name="viewport" content="width=device-width">
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="script.js"></script>
+  <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src https://*; child-src 'none';" >
+
   <title>Search</title>
-
-
 
   <script>
     if ('serviceWorker' in navigator) {
@@ -23,8 +27,6 @@
       });
   }
   </script>
-
-
 </head>
 
 <h1>Map</h1>
@@ -38,6 +40,7 @@
 </div>
 
 <div id="livesearch"></div>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
 
 
 
@@ -68,10 +71,6 @@
 
 
 <p class='navbar' style="position: relative;" ><a href="https://github.com/Thisisntarelname/phpajaxxml">Source | </a><a href="forms.google.com">Report an error | </a><a href="/about.html">Made by Fake Name and Name Fake</a></p>
-<br>
-
-
-
 
 </body>
 </html>
