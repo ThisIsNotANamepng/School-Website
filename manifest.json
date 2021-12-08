@@ -1,6 +1,6 @@
 {
-  "short_name": "Weather",
-  "name": "Weather: Do I need an umbrella?",
+  "short_name": "OHS Map",
+  "name": "Map of OHS",
   "icons": [
     {
       "src": "/images/512x512.png",
@@ -18,23 +18,23 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "https://phpajaxxml.codeeatspennies.repl.co/about",
-  "background_color": "#3367D6",
+  "start_url": "https://phpajaxxml.codeeatspennies.repl.co",
+  "background_color": "#29283E",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#3367D6",
+  "theme_color": "#29283E",
   "shortcuts": [
     {
-      "name": "How's weather today?",
-      "short_name": "Today",
-      "description": "View weather information for today",
+      "name": "OHS Map",
+      "short_name": "Map",
+      "description": "See an interactive map of OHS",
       "url": "/today?source=pwa",
       "icons": [{ "src": "/images/192x192.png", "sizes": "192x192" }]
     },
     {
-      "name": "How's weather tomorrow?",
-      "short_name": "Tomorrow",
-      "description": "View weather information for tomorrow",
+      "name": "Search Engine",
+      "short_name": "Search",
+      "description": "Search for teachers or rooms",
       "url": "/tomorrow?source=pwa",
       "icons": [{ "src": "/images/192x192.png", "sizes": "192x192" }]
     }
