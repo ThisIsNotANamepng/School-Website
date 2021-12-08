@@ -2,13 +2,29 @@
 ?>
 <html>
 <head>
-  <link rel="manifest" href="/app.webmanifest" crossorigin="use-credentials">
-
+  <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="script.js"></script>
   <title>Search</title>
+
+
+
+  <script>
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./serviceWorker.js')
+      .then(function(registration) {
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }).catch(function(err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+      });
+  }
+  </script>
+
+
 </head>
 
 <h1>Map</h1>

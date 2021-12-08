@@ -18,12 +18,12 @@ if (strlen($q)>1) {
       if (stristr($y->item(0)->childNodes->item(0)->nodeValue,$q)) {
         if ($hint=="") {
           $hint="<br><br><a id='results' href='" .
-          $z->item(0)->childNodes->item(0)->nodeValue .
+          $y->item(0)->childNodes->item(0)->nodeValue .
           "' target='_blank'>" .
           $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
         } else {
           $hint=$hint . "<br><br><a id='results' href='Rooms/" .
-          $z->item(0)->childNodes->item(0)->nodeValue .
+          $y->item(0)->childNodes->item(0)->nodeValue .
           ".html' target='_blank'>" .
           $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
         }
