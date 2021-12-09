@@ -1,6 +1,7 @@
 <?php
-	//header("Content-Security-Policy: default-src 'self'; img-src https://*; child-src 'none'; frame-ancestors 'self'; base-uri 'self';  form-action 'self';  font-src: 'self';");
+	header("Content-Security-Policy: img-src https://*; child-src 'none'; frame-ancestors 'self'; base-uri 'self';  form-action 'self';  font-src: 'self';");
 
+ // Policies that break search : default-src 'self'; 
 ?>
 
 <html>
@@ -10,8 +11,6 @@
   <meta name="viewport" content="width=device-width">
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="script.js"></script>
-  <meta http-equiv="Content-Security-Policy"
-      content="default-src 'self'; img-src https://*; child-src 'none';" >
 
   <title>Search</title>
 
