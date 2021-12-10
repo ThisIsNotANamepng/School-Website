@@ -28,7 +28,7 @@
 </div>
 
 <div id="livesearch"></div>
-<noscript>Sorry, your browser does not support JavaScript!</noscript>
+<noscript>Sorry, most of the website won't work without javascript, but I applaud the use of blocking</noscript>
 
 
 
