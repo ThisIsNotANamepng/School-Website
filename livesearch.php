@@ -17,13 +17,23 @@ if (strlen($q)>1) {
       //find a link matching the search text
       if (stristr($y->item(0)->childNodes->item(0)->nodeValue,$q)) {
         if ($hint=="") {
-          $hint="<br><br><a id='results' href='" .
+        
+          $hint="<br><br><a id='results' href='Teachers/" .
+          //$y=str_replace("_"," ",$y);
           $y->item(0)->childNodes->item(0)->nodeValue .
+          //$y=str_replace("_"," ",$y);
+
           "' target='_blank'>" .
           $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
+
+
         } else {
-          $hint=$hint . "<br><br><a id='results' href='Rooms/" .
+
+          $hint=$hint . "<br><br><a id='results' href='Teachers/" .
+          //$y=str_replace("_"," ",$y);
           $y->item(0)->childNodes->item(0)->nodeValue .
+          //$y=str_replace("_"," ",$y);
+          
           ".html' target='_blank'>" .
           $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
         }
@@ -36,7 +46,7 @@ if (strlen($q)>1) {
           ".html' target='_blank'>" .
           $z->item(0)->childNodes->item(0)->nodeValue . "</a>";
         } else {
-          $hint=$hint . "<br><br><a id='results' href='" .
+          $hint=$hint . "<br><br><a id='results' href='Rooms/" .
           $z->item(0)->childNodes->item(0)->nodeValue .
           "' target='_blank'>" .
           $z->item(0)->childNodes->item(0)->nodeValue . "</a>";
