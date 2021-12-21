@@ -13,18 +13,25 @@ if (strlen($q)>1) {
   $hint="";
   for($i=0; $i<($x->length); $i++) {
     $y=$x->item($i)->getElementsByTagName('data');
+
+
+
     if ($y->item(0)->nodeType==1) {
       //find a link matching the search text
+      
+
+
+
       if (stristr($y->item(0)->childNodes->item(0)->nodeValue,$q)) {
         if ($hint=="") {
-        
-          $hint="<br><br><a id='results' href='Data/" .
-          //$y=str_replace("_"," ",$y);
-          $y->item(0)->childNodes->item(0)->nodeValue .
-          
-          //$y=str_replace("_"," ",$y);
 
-          "' target='_blank'>" .
+          
+          $hint="<br><br><a id='results' href='Data/" .
+          $y->item(0)->childNodes->item(0)->nodeValue .
+
+          //$y=str_replace(' ', '', $y);
+
+          ".html' target='_blank'>" .
           $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
 
 
@@ -45,11 +52,13 @@ if (strlen($q)>1) {
 
 // Set output to "no suggestion" if no hint was found
 // or to the correct values
+
 if ($hint=="") {
   $response=" ";#put error, nothing found message here
 } else {
   $response=$hint;
 }
+
 
 //output the response
 echo $response;
