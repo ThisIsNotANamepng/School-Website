@@ -59,7 +59,7 @@
 <br><br><br>
 
 
-<footer style="text-align:center;">
+<footer style="text-align:center; font-family: Arial, Helvetica, sans-serif;">
 <a href="https://github.com/Thisisntarelname/phpajaxxml">Source | </a><a href="forms.google.com">Report an error | </a><a href="/about.html">Made by Fake Name and Name Fake</a>
 </footer>
 

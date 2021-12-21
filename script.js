@@ -12,6 +12,7 @@ function showResult(str) {
       document.getElementById("livesearch").style.border="0px solid #A5ACB2";
     }
   }
+  
   xmlhttp.open("GET","livesearch.php?q="+str,true);
   xmlhttp.send();
 }

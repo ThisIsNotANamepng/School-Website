@@ -1,83 +1,32 @@
 <pages>
     <school>
-        <name>First Last</name>
-        <room>101</room>
+      <data>100</data>
     </school>
     <school>
-        <name>Bob Dylan</name>
-        <room>150</room>
+      <data>101</data>
     </school>
     <school>
-        <name>Your Mom</name>
-        <room>123</room>
+      <data>102</data>
     </school>
     <school>
-        <name>Firstname Lastname </name>
-        <room>102</room>
+      <data>103</data>
     </school>
     <school>
-        <name>Bobert McCallister</name>
-        <room>155</room>
+      <data>104</data>
     </school>
     <school>
-        <name>John Doe</name>
-        <room>1745453</room>
+      <data>Dwayne Johnson</data>
     </school>
     <school>
-        <name>Evan Bronson</name>
-        <room>765</room>
+      <data>Your mom</data>
     </school>
     <school>
-        <name>105</name>
-        <room>Sean Bond</room>
+      <data>Joe Biden</data>
     </school>
     <school>
-        <name>106</name>
-        <room>Jason Band</room>
+      <data>Barrack Obama</data>
     </school>
     <school>
-        <name>107</name>
-        <room>The Rock</room>
+      <data>Donald Trump</data>
     </school>
-    <school>
-        <name>108</name>
-        <room>Dwayne_Johnson</room>
-    </school>
-    <school>
-        <name>109</name>
-        <room>Julia Walk</room>
-    </school>
-    <school>
-        <name>110</name>
-        <room>Jason Statham</room>
-    </school>
-    <school>
-        <name>111</name>
-        <room>Joe Desmos</room>
-    </school>
-    <school>
-        <name>112</name>
-        <room>Joe Biden</room>
-    </school>
-    <school>
-        <name>113</name>
-        <room>Donald Trump</room>
-    </school>
-    <school>
-        <name>114</name>
-        <room>Big Person</room>
-    </school>
-    <school>
-        <name>115</name>
-        <room>Jules Verne</room>
-    </school>
-    <school>
-        <name>116</name>
-        <room>Julie Dreufous</room>
-    </school>
-    <school>
-        <name>117</name>
-        <room>James Monroe</room>
-    </school>
-
 </pages>
