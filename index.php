@@ -1,5 +1,5 @@
 <?php
-	header("Content-Security-Policy: img-src https://*; child-src 'none'; frame-ancestors 'self'; base-uri 'self';  form-action 'self';  font-src 'self'; object-src 'none'; upgrade-insecure-requests; ");
+	header("Content-Security-Policy: img-src https://*; frame-ancestors 'self'; base-uri 'self';  form-action 'self';  font-src 'self';upgrade-insecure-requests; object-src https://School-Website.codeeatspennies.repl.co;");
 
  // Policies that break search : default-src 'self'; script-src 'anything'; 
 ?>
@@ -29,7 +29,8 @@
 
 <div id="livesearch"></div>
 
-<noscript>Sorry, most of the website won't work without javascript, but I applaud the use of blocking</noscript>
+<noscript>
+<h1>Sorry, most of the website won't work without javascript, but I applaud the use of blocking<h1></noscript>
 
 
 
@@ -58,8 +59,9 @@
 <br><br><br>
 
 
-
-<p class='navbar' style="position: relative;" ><a href="https://github.com/Thisisntarelname/phpajaxxml">Source | </a><a href="forms.google.com">Report an error | </a><a href="/about.html">Made by Fake Name and Name Fake</a></p>
+<footer style="text-align:center;">
+<a href="https://github.com/Thisisntarelname/phpajaxxml">Source | </a><a href="forms.google.com">Report an error | </a><a href="/about.html">Made by Fake Name and Name Fake</a>
+</footer>
 
 </body>
 </html>

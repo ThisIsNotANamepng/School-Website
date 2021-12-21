@@ -21,6 +21,7 @@ if (strlen($q)>1) {
           $hint="<br><br><a id='results' href='Teachers/" .
           //$y=str_replace("_"," ",$y);
           $y->item(0)->childNodes->item(0)->nodeValue .
+          
           //$y=str_replace("_"," ",$y);
 
           "' target='_blank'>" .

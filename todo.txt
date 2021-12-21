@@ -1,20 +1,14 @@
-add a csp
-
 make sure development php server is safe
 
 Make sure database is safe
 
-xss protection
-
 Add 404 page
-
-Add a schedule page, user enters schedule and classs are stored in cookies, it woould plan out the day in the form of a map?
 
 3d printed tactile maps?
 
 Make it easily downloadable (internet at school is iffy) 
 
-try to make it a small size so it downloads quickly even with shitty connection
+offline pwa
 
 2d map 
 
