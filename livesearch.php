@@ -24,6 +24,7 @@ if (strlen($q)>1) {
 
       if (stristr($y->item(0)->childNodes->item(0)->nodeValue,$q)) {
         if ($hint=="") {
+          //$l=str_replace(' ','',$y);
 
           
           $hint="<br><br><a id='results' href='Data/" .
@@ -36,9 +37,9 @@ if (strlen($q)>1) {
 
 
         } else {
-
+          //$l=str_replace(' ','',$y);
           $hint=$hint . "<br><br><a id='results' href='Data/" .
-          //$y=str_replace("_"," ",$y);
+          
           $y->item(0)->childNodes->item(0)->nodeValue .
           //$y=str_replace("_"," ",$y);
           
