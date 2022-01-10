@@ -15,22 +15,26 @@
   <title>Search</title>
 
   <script src=/serviceworkerfromindex.js></script>
-</head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<h1>Map</h1>
-<body>
+</head>
+<body >
+<!--class="w3-container w3-win8-mauve"-->
+
+<h1 style="font-family: poppins">Map</h1>
 
 <form>
 
 <div class='se'>
-<input id="search" type="text" size="30" onkeyup="showResult(this.value)" placeholder="Search for a room number or a teacher..."/autofocus><br>
+<input spellcheck="false" id="search" type="text" size="30" onkeyup="showResult(this.value)" placeholder="Search for a room number or a teacher..."/autofocus><br>
 </form>
 </div>
 
 <div id="livesearch"></div>
 
 <noscript>
-<h1>Sorry, most of the website won't work without javascript, but I applaud the use of blocking<h1></noscript>
+<h1>THe search and map functions will not work without javascript<h1>
+</noscript>
 
 
 
@@ -59,9 +63,23 @@
 <br><br><br>
 
 
-<footer style="text-align:center; font-family: Arial, Helvetica, sans-serif;">
-<a href="https://github.com/Thisisntarelname/phpajaxxml">Source | </a><a href="forms.google.com">Report an error | </a><a href="/about.html">Made by Fake Name and Name Fake</a>
-</footer>
 
+
+<div class="w3-container w3-black">
+  <br><br>
+  
+  <div class="bottomLinks">
+  <a href="https://github.com/Thisisntarelname/phpajaxxml" class="bottomLinks">Source </a>
+  |
+  <a class="bottomLinks" href="forms.google.com"> Report an error </a>
+  |
+  <a class="bottomLinks" href="/about.html"> Made by Fake Name and Name Fake</a>
+  </div>
+  
+
+
+  <br><br>
+</div>
 </body>
+
 </html>

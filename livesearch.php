@@ -26,24 +26,25 @@ if (strlen($q)>1) {
         if ($hint=="") {
           //$l=str_replace(' ','',$y);
 
-          
+          $linkName=str_replace (' ','',$y->item(0)->childNodes->item(0)->nodeValue);
           $hint="<br><br><a id='results' href='Data/" .
-          $y->item(0)->childNodes->item(0)->nodeValue .
+          $linkName .
 
           //$y=str_replace(' ', '', $y);
 
-          ".html' target='_blank'>" .
+          "' target='_blank'>" .
           $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
 
 
         } else {
           //$l=str_replace(' ','',$y);
+          $linkName=str_replace (' ','',$y->item(0)->childNodes->item(0)->nodeValue);
           $hint=$hint . "<br><br><a id='results' href='Data/" .
           
-          $y->item(0)->childNodes->item(0)->nodeValue .
+          $linkName .
           //$y=str_replace("_"," ",$y);
           
-          ".html' target='_blank'>" .
+          "' target='_blank'>" .
           $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
         }
       }

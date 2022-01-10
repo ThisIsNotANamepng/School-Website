@@ -22,14 +22,13 @@ Results appear in the empty
 Right now the results appear each with a background, which is set to a width of 90something% of the screen, in an attempt to be friendly to different screen wdiths
 
 ## livesearch.php
-livesearch.php is the php file that sorts through the xl database and returns the results. 
+livesearch.php is the php file that sorts through the xml database and returns the results. 
 
 Because of
 
-    $y=$x->item($i)->getElementsByTagName('name');
-    $z=$x->item($i)->getElementsByTagName('room');
+  $linkName=str_replace (' ','',$y->item(0)->childNodes->item(0)->nodeValue);
 
-Anything function that uses the variable $y will be using the teacher's name that it has retrived, and anything that uses $x will be using the room number. The $q variable is the search text
+Anything function that uses the variable $linkName will be using the teacher name or room number that it has retrived. The $q variable is the search text
 
 For example, the code line
 

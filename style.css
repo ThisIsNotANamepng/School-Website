@@ -1,23 +1,16 @@
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-
 @font-face {
   font-family: Poppins;
   src: url(Poppins-Medium.ttf);
 }
 
 body {
-  background-color: 67548c;
+  background-color: #67548c;
 }
 
 h1{
   font-family: Poppins;
   text-align: center;
-  color: F0D265;
+  color: #F0D265;
 
 }
 
@@ -31,6 +24,7 @@ h3{
 
 p{
   font-family: Poppins;
+  color: #ffffff;
 }
 
 .se{
@@ -52,10 +46,11 @@ p{
 #livesearch{
   font-family: Poppins;
 }
+
 #results{
   color: 302A50;
   text-decoration: none;
-  width: 98%;
+  width: 100%;
   padding-left: 2%;
   float: left;
   background-color: F0D265;
@@ -63,18 +58,31 @@ p{
   font-family: Poppins;
 }
 
-.navbar {
-  text-decoration: none;
-  color: aliceblue;
-  text-align: center;
-  font-size: 0.75em;
-  position: absolute;
-  width: 100%;
-}
 
 a:link, a:visited {
   color: aliceblue;
 }
 
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
 
+.bottomLinks {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  width: 75%;
+  margin: auto;
+  padding: 5px;
 
+}
+
+.aboutP {
+  width: 75%;
+  margin: auto;
+  padding: 10px;
+  position: ablosulte;
+
+}
