@@ -73,7 +73,7 @@ if($_SESSION['password']=="a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e8
 
   <script>//add scripts for when user is logged out
     function goBack() {
-      location.replace("https://PHPLogin.duckit.repl.co")
+      location.replace("https://school-website.codeeatspennies.repl.co/admin.php")
     }  
   </script>
 
