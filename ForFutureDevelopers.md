@@ -70,7 +70,7 @@ The database that I landed on is a simple xml database
 
 At the moment, the database is loaded on the same server as the index, but that might change in the future to protect it
 
-Each pair of items are stored in a <school> row, the teacher's name and room number are stored in the <name> and <room> rows, respectively
+Each piece of data is stored in <data></data>. I used to seperate them by teacher names vs room numbers, but it became a hassle and was unnessacary
 
 
 ## Content Security Policy
@@ -107,7 +107,17 @@ and
 > https://content-security-policy.com/
 
 
+## MakeDatabase.py
 
+Holy cow, I just finished writing the code my goodness that was a lot
+
+MakeDatabase.py works in tandem with admin.php and fileUploadScript.php to create a password-protected admin page and a program that takes the uploaded .xlsx file. turns it into a new xml database, and creates the pages for each new teacher name and/or room number
+
+Keep in mind, inspecting the admin page in your browser will show people the html, but not the php. It starts a session when the password is inputted correctly and fileUploadScriot.php will only load corret=ctly if the session persists
+
+IMPORTANT- The password is hard coded in the code, it's stored as a sha256 hash, in order to change it you need to manually go inot the code an replace it with another sha256 hash
+
+Now that I'm done, I realize that the script doesen't delete unused existing pages and doesen't create pages for room numbers (but I don't think creating new pages for room numbers are that nessacary)
 
 
 

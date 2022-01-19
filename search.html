@@ -1,8 +1,4 @@
-<?php
-	header("Content-Security-Policy: img-src https://*; frame-ancestors 'self'; base-uri 'self';  form-action 'self';  font-src 'self';upgrade-insecure-requests; object-src https://School-Website.codeeatspennies.repl.co;");
-
- // Policies that break search : default-src 'self'; script-src 'anything'; 
-?>
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -18,20 +14,12 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
+<body >
 
-<div class="navbar">
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/map">Map</a></li>
-    <li><a href="/search">Search</a></li>
-    <li><a href="/report">Report a mistake</a></li>
-    <input class="navSearch" type="text"  placeholder="Search..">
-
-  </ul>
-</div>
-<body>
+<h1 style="font-family: poppins">Map</h1>
 
 <form>
+
 <div class='se'>
 <input spellcheck="false" id="search" type="text" size="30" onkeyup="showResult(this.value)" placeholder="Search for a room number or a teacher..."/autofocus><br>
 </form>
@@ -70,6 +58,10 @@
 <br><br><br>
 
 
+
+<div class="w3-panel w3-round-xlarge w3-teal" style="width: 50%; float: right;">
+  <p>w3-round-xlarge</p>
+</div>
 
 <br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br>

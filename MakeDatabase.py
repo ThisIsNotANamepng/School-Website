@@ -5,10 +5,18 @@ import os
 import openpyxl
 import xml.etree.ElementTree as gfg
 import glob
+from xml.etree import ElementTree
+import smtplib, ssl
+
 
 b = open('template.txt', 'r')
 bb = b.read()
-
+c = open('template2.txt', 'r')
+cc = c.read()
+d = open('template3.txt', 'r')
+dd = d.read()
+added = []
+removed = []
 path = "Data"
 dir_list = os.listdir(path)
 
@@ -46,8 +54,10 @@ while i <= max_rows:
         b1.text = (cell_obj.value)
         
         print(cell_obj.value)
+        
 
         searchThis = cell_obj.value
+        teacherName = searchThis
         searchThis = searchThis.replace(" ", "")
         
 
@@ -61,7 +71,22 @@ while i <= max_rows:
           #Copy template into file here
           f.write(bb)
           
+          f.close()
+          f = open((searchThis), "a")
+          f.write("  <title>"+teacherName+"</title>")
+          f.write("\n")
+          f.write(cc)
+          print("\n")
+          f.write("<h1>"+teacherName+"</h1>")
+          print("\n")
+          f.write(dd)
           
+          
+          
+
+
+          
+          added.append(cell_obj.value)
           
           f.close()
           
@@ -74,18 +99,59 @@ while i <= max_rows:
 b.close()
 
 
+print(added)
 
 
-
- 
 
 tree = gfg.ElementTree(root)
 
 os.chdir('/home/runner/School-Website')
-
-with open ("new_database.xml", "wb") as files :
+os.remove('database.xml')
+with open ("database.xml", "wb") as files :
   tree.write(files)
 
 
 #delete uploaded file when finished
-#os.remove(delete)
+os.remove(delete)
+
+
+tree = ElementTree.parse("database.xml")   
+olp = tree.findall(".//data")
+fileList = [t.text for t in olp]#fileList is a list of the pages in the database
+
+print(fileList)
+print(dir_list)#dir_list is a list of pages 
+#email-- take whatever item is being deleted from dir_list and match it with the one in fileList. For example, if Scott Bakkum was being removed you could email fileList[1] because it's the same as dir_list, just with spaces
+fileListt = []
+i = 0
+while (i<len(fileList)):#strip out spaces from list of files 
+  fileListt.append(fileList[i].replace(' ', ''))
+  i = i+1
+
+fileList = fileListt
+
+#Now we loop through the dir_list, any files that are in dir_list and not 'fileList' (the database) is unused and unnescary
+i = 0
+remove_list = []
+
+while (i<len(dir_list)):#looping through dir_list and asking if each item is in fileList, if it is, nothing happens. If it's not, it's added to remove_list
+  if dir_list[i] in (fileList):
+    a = 1
+  else:
+    remove_list.append(dir_list[i])
+  i=i+1
+
+print(remove_list)
+i = 0
+os.chdir("Data")
+while i<len(remove_list):#deletes all files in remove_list
+  os.remove(remove_list[i])
+  i = i+1
+
+
+
+
+
+
+
+

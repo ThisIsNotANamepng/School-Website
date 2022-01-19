@@ -1,10 +1,12 @@
 @font-face {
-  font-family: Poppins;
   src: url(Poppins-Medium.ttf);
+  font-family: Poppins;
 }
 
 body {
   background-color: #67548c;
+  margin: 0;
+
 }
 
 h1{
@@ -29,6 +31,7 @@ p{
 
 .se{
   text-align: center;
+  padding-top: 5%;
 
 }
 
@@ -86,3 +89,49 @@ a:link, a:visited {
   position: ablosulte;
 
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(53, 36, 67);
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.navSearch {
+  background:rgba(50, 50, 50, 0.2);
+  padding: 6px 15% 6px 6px;
+  margin-top: 8px;
+  border: none;
+  float: right;
+  color: white;
+  
+}
+
+
+
+

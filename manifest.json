@@ -25,31 +25,18 @@
   "theme_color": "#29283E",
   "shortcuts": [
     {
-      "name": "OHS Map",
+      "name": "Map",
       "short_name": "Map",
       "description": "See an interactive map of OHS",
-      "url": "/today?source=pwa",
+      "url": "/map",
       "icons": [{ "src": "/images/192x192.png", "sizes": "192x192" }]
     },
     {
       "name": "Search Engine",
       "short_name": "Search",
       "description": "Search for teachers or rooms",
-      "url": "/tomorrow?source=pwa",
+      "url": "/search",
       "icons": [{ "src": "/images/192x192.png", "sizes": "192x192" }]
-    }
-  ],
-  "description": "Weather forecast information",
-  "screenshots": [
-    {
-      "src": "/images/540x720.png",
-      "type": "image/png",
-      "sizes": "540x720"
-    },
-    {
-      "src": "/images/540x720.png",
-      "type": "image/png",
-      "sizes": "540x720"
     }
   ]
 }

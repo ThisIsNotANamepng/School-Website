@@ -1,3 +1,8 @@
+<html>
+  <head>
+    <title>Database Upload</title>
+  </head>
+</html>
 <?php
 
 session_start();
