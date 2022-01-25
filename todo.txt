@@ -36,3 +36,5 @@ room page: 7832 will be added
 Make a privacy policy (terms of service?)
 
 On teacher pages, make it say mr or mrs teacher instead of full name
+
+Add a low-internet page, map is loaded statically, search doesen't work
