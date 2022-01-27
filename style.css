@@ -34,15 +34,19 @@ p{
 
 }
 
-form {
+.bigSearch {
   padding-top: 8%;
 }
 
+
+
 @media (max-width: 800px) {
   
-  form {
+  .bigSearch {
     padding-top: 20%;
   }
+
+
 
 
 }
@@ -54,7 +58,7 @@ form {
   background:rgba(50, 50, 50, 0.2);
   border:0px solid #dbdbdb;
   color: EDF2F4;
-  float:center;
+  float: center;
 
 }
 
@@ -79,9 +83,10 @@ a:link, a:visited {
 }
 
 .footer {
-  background-color: #f1f1f1;
-  padding: 10px;
+  background-color: #000000;
+  padding: 0px;
   text-align: center;
+  width: 100%;
 }
 
 .bottomLinks {
@@ -101,6 +106,18 @@ a:link, a:visited {
   position: ablosulte;
 
 }
+
+.submitButton {
+  text-align: center;
+  float: center;
+  margin: auto;
+  padding: 5%;
+}
+
+.submitbutton{
+  width: 50%;
+}
+
 
 #map { height: 180px; }
 
