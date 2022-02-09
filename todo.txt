@@ -16,7 +16,7 @@ hallway names
 
 A way to show a path through the school to a selected room(Pathfinding Algorithim)
 
-add where you can get food for lunch- lunch menus?
+add where you can get food for lunch- lunch menus? (pdf crawler for https://www.oasd.k12.wi.us/page.cfm?p=8036  ?)
 
 Find a way to hide the database from searching  https://school-website.codeeatspennies.repl.co/database.xml, if no way, just rename to something like hsdkvvyuvfkuyvskducyzskudyvkuyzskuyekuzysekdjgvbkzshgdzv.xml
 
@@ -38,3 +38,5 @@ Make a privacy policy (terms of service?)
 On teacher pages, make it say mr or mrs teacher instead of full name
 
 Add a low-internet page, map is loaded statically, search doesen't work
+
+Admin alert system which emails certain admins if the database is changed or  there are a suspiciously high number of visitors or if the website is under heavy load or if the website is down

@@ -24,6 +24,7 @@ if(isset($_POST['page_logout']))
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="admin.css">
+<title>Admin</title>
 </head>
 <body>
 <div id="wrapper">
@@ -48,15 +49,20 @@ if($_SESSION['password']=="a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e8
   <input type="submit" name="submit" value="Submit" id="submitButton">  </form>
 
 
+  <?php
+  $myfile = fopen("counter.txt", "r") or die("Unable to open file!");
+  $count = fread($myfile,filesize("counter.txt"));
+  fclose($myfile);
+
+  echo "<br><div class='counter'><h2>Visitors (Non unique)</h2><h3>$count</h3></div>"
+
+  ?>
 
 
 
 
 
-
-
-
-
+  <!--End protected contents-->
    
  <?php
 }

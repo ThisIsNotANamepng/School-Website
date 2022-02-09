@@ -1,4 +1,4 @@
-# phpajaxxml
+# OHS School Map
 This is the repository for the OHS school map and search engine
 
 ## How to use 

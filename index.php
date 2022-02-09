@@ -19,10 +19,6 @@
   <script src=/serviceworkerfromindex.js></script>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
-
-
 </head>
 
 <!-- Sidebar (hidden by default) -->
@@ -31,6 +27,8 @@
   class="w3-bar-item w3-button w3-theme-d4 ">X</a>
   <a href="/search" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d2 w3-text-vivid-white">Search</a>
   <a href="/map" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d2 w3-text-vivid-white">Map</a>
+  <a href="/lowInternet" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d2 w3-text-vivid-white">Low internet page</a>
+
   <a href="https://oasd.org" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d2 w3-text-vivid-white">oasd.org</a>
   <a href="/about" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d1">About</a>
   <a href="https://forms.gle/MdS2EnYSyWjEdCBL9" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d1">Report a Problem</a>
@@ -45,7 +43,20 @@
 </div>
   
 <body>
+<?php
+$myfile = fopen("counter.txt", "r") or die("Unable to open file!");
+$count = fread($myfile,filesize("counter.txt"));
+fclose($myfile);
+echo $count;
 
+$myfile = fopen("counter.txt", "w") or die("Unable to open file!");
+$txt = $count + 1;
+fwrite($myfile, $txt);
+
+fclose($myfile);
+
+
+?> 
 
 <div class='se'>
 <form class="bigSearch">
@@ -61,7 +72,7 @@
 
 <!--<div id='map'></div>
 <script src="map.js"></script>
-UnComment this to load the map
+Uncomment this to load the map
 -->
 
 
@@ -78,7 +89,7 @@ UnComment this to load the map
     </header>
 
     <div class="w3-container" style="text-align:center">
-      <p>Where is your destination?</p>
+      <p>Where is your room number destination?</p>
       
       <form class="w3-container" name="destinationForm">
         <input class="w3-input w3-animate-input" type="number" style="width:50%; margin:auto; text-align:center" id="destinationBar" name="destinationBar">
