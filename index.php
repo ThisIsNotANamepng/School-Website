@@ -12,9 +12,7 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="script.js"></script>
   <meta name="mobile-web-app-capable" content="yes">
-
-
-  <title>Search</title>
+  <title>Map of OHS</title>
 
   <script src=/serviceworkerfromindex.js></script>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">

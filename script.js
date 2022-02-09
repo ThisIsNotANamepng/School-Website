@@ -1,4 +1,3 @@
-
 element.requestFullscreen()
 
 function showResult(str) {

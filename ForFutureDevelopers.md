@@ -3,9 +3,9 @@ I know that I won't be around after I graduate to continue updating and developi
 
 We started the website on Replit.com, I don't know what you are using now, but that's where we started our humble beginnings. We spent a month looking at diffferent ways to search a database from a webpage. We tried JSON, SQL, Ajax, pure javascript, paid services, cloud computing. It took a long time. We finally landed on a php search with an xml database becasue it was the only thing that worked
 
-We looked at img maps, Google maps, pngs, embeding a paid service, and finally settled on an OpenStreetMaps project for the map portion
+We looked at img maps, Google maps, pngs, embeding a paid service, OpenStreetMaps, and finally settled on the less elegant html camvas solution for the map portion
 
-We talked to the Computer Science teacher, the IT department, the school marketing director, and the principal. This project is the result of hundereds of hours of work, thousands of lines of code, countless web searches. 
+We talked to the Computer Science teacher, the IT department, the school marketing director, Buildings and Grounds, and the principal. This project is the result of hundereds of hours of work, thousands of lines of code, countless web searches. 
 
 And now it's yours
 
@@ -63,6 +63,11 @@ Or you could change the css id like this
       $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
     }
 
+## Script.js
+
+script.js handles search requests from the php page and hands them off to livesearch.php, and vice versa. This means it can affect how the search items are shown on the php page and can sort through requests
+
+The string 'str' is the searched string 
 
 ## Database
 
@@ -115,12 +120,49 @@ MakeDatabase.py works in tandem with admin.php and fileUploadScript.php to creat
 
 Keep in mind, inspecting the admin page in your browser will show people the html, but not the php. It starts a session when the password is inputted correctly and fileUploadScriot.php will only load corret=ctly if the session persists
 
-IMPORTANT- The password is hard coded in the code, it's stored as a sha256 hash, in order to change it you need to manually go inot the code an replace it with another sha256 hash
-
-Now that I'm done, I realize that the script doesen't delete unused existing pages and doesen't create pages for room numbers (but I don't think creating new pages for room numbers are that nessacary)
+Now that I'm done, I realize that the script doesen't delete unused existing pages and doesen't create pages for room numbers (but I don't think creating new pages for room numbers is that nessacary because they don't change nearly as often)
 
 
 
+## Admin Page
+
+Is the admin page that I coded to be able to change the database quicly and easily. It is currently available through  https://school-website.codeeatspennies.repl.co/admin.php. I didn't take any effort to put it in the front page in order to make it less dicoverable, and only known to people who would use it for good. 
+
+Right now it only has the ability to change the database and display visitors, but I envision it being able to list changes made to the database, change html pages on all of the teachers and rooms monitor website load, and email admins when changes take place or when the website is under a heavy load. More of a dashboard really.
+
+IMPORTANT- The password is hard coded in the code, it's stored as a sha256 hash, in order to change it you need to manually go into the code an replace it with another sha256 hash. The website (so far) does not have any bot protection, so theoretically someone could probably try to brute force the password. Don't let that happen. Keep the password very long. It should be in admin.php
+
+> if($pass=="a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3")
+ {
+  $_SESSION['password']=$pass;
+
+This is how it is now with the password 123. Replace the long string of letters and numbers with another sha256 hash to change the password. 
+
+When you log in on admin.php it starts a session which allows you acess to fileUploadScript.php, which is where the uploaded file actually goes. Be very careful with the password, itf it is used maliciously someone could upload a file with hundereds of thousands of entries, running the website out of space, memory and eventually shutting it down. 
+
+### Visitor Counter
+
+I made a very crude visitor counter because I wanted to see how many people used my website. It works by loading a php script when index.php is loaded, so it will not track unique visitors or when visitors just reload the page or go back to the homepage, but it works nonetheless. 
+
+The php script opens the file counter.txt, reads it (there should only be one number in it), converts what it reads to an integer, adds one to it, and rewrites the file with the new integer. It's contained in index.php and is displayed on the admin page.
+
+## Web Manifest
+
+The web manifest took a long time to figure out, it's what the browser uses to serve the pwa. In it is the images it loads, the name, the theme colors, and the shortcuts. 
+
+
+### Service Worker
+
+The website only works with service workers. I don't really know what that means, I found an obscure page on StackOverflow about it and I din't understand, but the website WILL NOT work as a pwa without serviceWorker.js and serviceworkerfromindex.js (it was originally included in index.php but I tried to get the csp to work and ended putting it in a seperate .js file).
+
+
+## W3.CSS
+
+Using W3.CSS came about from feeling the despair of trying to get the frontend to work equally as well on mobile and chromebook after a haitus of working on backend for a few weeks. 
+
+W3.CSS is a css library that makes it theoretically easier to make mobile-first websites. I'm not going to try to explain it but here's the homepage for all of the documentation -> https://www.w3schools.com/w3css/defaulT.asp
+
+## Map
 
 
 
@@ -128,17 +170,23 @@ Now that I'm done, I realize that the script doesen't delete unused existing pag
 
 
 
+### Good Luck
 
+Now that I have imparted my knowledge, it is up to you to continue this resource. Thank you.
 
-
-
-
-
-
-
-
-
+Signed [Name protected], 02-08-2022
 
 If you ever need my help, you can reach me at [email protected]
 
-Signed, [Name protected]
+
+
+
+
+#### Future maintainers
+If you change the code in any large way, please, PLEASE add on to this documentation and add your name below
+
+
+
+### Hall of Maintainers
+
+2021 - 2023  (Founder) [Name protected], 02-08-2022

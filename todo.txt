@@ -40,3 +40,5 @@ On teacher pages, make it say mr or mrs teacher instead of full name
 Add a low-internet page, map is loaded statically, search doesen't work
 
 Admin alert system which emails certain admins if the database is changed or  there are a suspiciously high number of visitors or if the website is under heavy load or if the website is down
+
+Only allow MakeDatabase.py acess to so much memory, if it is accessed by a malicious actor they could upload a file with hundereds of thousands of entries, shuttting down the website from the stress
