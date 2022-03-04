@@ -19,3 +19,8 @@ function showResult(str) {
 }
 
 
+function showNavbar() {
+  element.innerHTML += "additional HTML code"
+  document.getElementById("navvbar").innerHTML += ""
+
+}

@@ -3,16 +3,51 @@
   font-family: Poppins;
 }
 
+.la {
+  display: block;
+}
+
+.lat {
+  display: block;
+}
+
+.lat:link {
+  text-decoration: none;
+}
+
+.lat:visited {
+  text-decoration: none;
+}
+
+.lat:hover {
+  text-decoration: none;
+}
+
+.navBar{
+  background-color: #333F63;
+}
 body {
-  background-color: #67548c;
+  background-color: #715C8C;
   margin: 0;
 
+}
+
+html, body {
+  height: 100%;
+}
+
+.full-height {
+  height: 90%;
+}
+
+.title {
+  color: #D7D4DD;
 }
 
 h1{
   font-family: Poppins;
   text-align: center;
-  color: #F0D265;
+  color: #D7D4DD;
 
 }
 
@@ -22,11 +57,13 @@ h2{
 
 h3{
   font-family: Poppins;
+  color: #D7D4DD;
+
 }
 
 p{
   font-family: Poppins;
-  color: #ffffff;
+  color: #D7D4DD;
 }
 
 .se{
@@ -47,17 +84,18 @@ p{
   }
 
 
-
-
 }
 
+#dataTitle {
+  font-weight: bold;
+
+}
 #search{
   width: 90%;
   height: 2.5em;
   padding:8px 15px;
   background:rgba(50, 50, 50, 0.2);
-  border:0px solid #dbdbdb;
-  color: EDF2F4;
+  color: #D7D4DD;
   float: center;
 
 }
@@ -79,7 +117,6 @@ p{
 
 
 a:link, a:visited {
-  color: aliceblue;
 }
 
 .footer {
@@ -118,19 +155,25 @@ a:link, a:visited {
   width: 50%;
 }
 
-
+#mySidebar {
+  color: rgb(0, 0, 0)
+}
 #map { height: 180px; }
 
-.w3-theme-l5 {color:#000 !important; background-color:#f6f4f9 !important}
-.w3-theme-l4 {color:#000 !important; background-color:#e0dbea !important}
-.w3-theme-l3 {color:#000 !important; background-color:#c1b8d4 !important}
-.w3-theme-l2 {color:#fff !important; background-color:#a294bf !important}
-.w3-theme-l1 {color:#fff !important; background-color:#8370a9 !important}
-.w3-theme-d1 {color:#fff !important; background-color:#5d4c7e !important}
-.w3-theme-d2 {color:#fff !important; background-color:#524370 !important}
-.w3-theme-d3 {color:#fff !important; background-color:#483b62 !important}
-.w3-theme-d4 {color:#fff !important; background-color:#3e3254 !important}
-.w3-theme-d5 {color:#fff !important; background-color:#332a46 !important}
+.doc {
+  width: 50%;
+  height: 100%;
+}
+
+.embedded {
+  width:50%; 
+  height: 100%;
+}
+
+iframe {
+  width: 50%;
+  height: 100%;
+}
 
 .w3-theme-light {color:#000 !important; background-color:#f6f4f9 !important}
 .w3-theme-dark {color:#fff !important; background-color:#332a46 !important}

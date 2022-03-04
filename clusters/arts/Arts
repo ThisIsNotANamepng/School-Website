@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Arts Cluster</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+
+
+    
+    <div class="w3-container classescon w3-left w3-half">
+      <ul class="w3-ul w3-grey">
+        <li><a href="/clusters/arts/acting1">Acting 1</a></li>
+        <li><a href="/clusters/arts/puttingonashow">Putting On A Show</a></li>
+        <li><a href="/clusters/arts/filmacting">Film Acting</a></li>
+        <li><a href="/clusters/arts/musicaltheatre">Musical Theatre</a></li>
+        <li><a href="/clusters/arts/theatrearts">Theatre Arts</a></li>
+        <li><a href="/clusters/arts/IBtheatre">IB Theatre</a></li>
+        <li><a href="/clusters/arts/advancedacting234">Advanced Acting 2, 3, 4</a></li>
+        <li><a href="/clusters/arts/schoolofrock">School Of Rock</a></li>
+        <li><a href="/clusters/arts/choraliers">Choraliers</a></li>
+        <li><a href="/clusters/arts/concertchoir">Concert Choir</a></li>
+        <li><a href="/clusters/arts/treblechoir">Treble Choir</a></li>
+        <li><a href="/clusters/arts/IBmusicSL">IB Music SL</a></li>
+        <li><a href="/clusters/arts/concertband">Concert Band</a></li>
+        <li><a href="/clusters/arts/symphonicband">Symphonic Band</a></li>
+        <li><a href="/clusters/arts/windsymphony">Wind Symphony</a></li>
+        <li><a href="/clusters/arts/orchestra">Orchestra</a></li>
+        <li><a href="/clusters/arts/drawing1">Drawing 1</a></li>
+        <li><a href="/clusters/arts/painting1">Painting 1</a></li>
+        <li><a href="/clusters/arts/sculpture1">Sculpture 1</a></li>
+        <li><a href="/clusters/arts/ceramics1">Ceramics 1</a></li>
+        <li><a href="/clusters/arts/digitalphotography1">Digital Photography 1</a></li>
+        <li><a href="/clusters/arts/digitalart">Digital Art</a></li>
+        <li><a href="/clusters/arts/advanceddigitalart">Advanced Digital Art</a></li>
+        <li><a href="/clusters/arts/industrialdesign">Industrial Design</a></li>
+        <li><a href="/clusters/arts/advertisinganddesign">Advertising And Design</a></li>
+        <li><a href="/clusters/arts/APartanddesign">AP Art And Design</a></li>
+        <li><a href="/clusters/arts/advancedsculptureandceramics123">Advanced Sculpture and Ceramics 1, 2, and 3</a></li>
+        <li><a href="/clusters/arts/advancedphotography23">Advanced Photography 2 and 3</a></li>
+        <li><a href="/clusters/arts/designchallenge">Design Challenge</a></li>
+        <li><a href="/clusters/arts/advanceddrawingandpainting23">Advanced Drawing and Painting 2 and 3</a></li>
+        <style>
+        a {
+          display: block;
+        }
+        
+        a:link {
+          text-decoration: none;
+        }
+        
+        a:visited {
+          text-decoration: none;
+        }
+        
+        a:hover {
+          text-decoration: none;
+        }
+        </style>
+
+      </ul>
+    </div>
+
+    <div class="w3-container classescon w3-right w3-half">
+      <ul class="w3-ul w3-grey">
+        <li><a href="/teachers/a-fischer">aaron Fischer</a></li>
+
+
+      </ul>
+    </div>
+
+  </body>
+</html>

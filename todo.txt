@@ -6,15 +6,13 @@ Add 404 page
 
 3d printed tactile maps?
 
-Make it easily downloadable (internet at school is iffy) 
-
 offline pwa
 
 2d map 
 
 hallway names
 
-A way to show a path through the school to a selected room(Pathfinding Algorithim)
+A way to show a path through the school to a selected room (Pathfinding Algorithim)
 
 add where you can get food for lunch- lunch menus? (pdf crawler for https://www.oasd.k12.wi.us/page.cfm?p=8036  ?)
 
@@ -35,10 +33,8 @@ room page: 7832 will be added
 
 Make a privacy policy (terms of service?)
 
-On teacher pages, make it say mr or mrs teacher instead of full name
-
 Add a low-internet page, map is loaded statically, search doesen't work
 
 Admin alert system which emails certain admins if the database is changed or  there are a suspiciously high number of visitors or if the website is under heavy load or if the website is down
 
-Only allow MakeDatabase.py acess to so much memory, if it is accessed by a malicious actor they could upload a file with hundereds of thousands of entries, shuttting down the website from the stress
+Admin page ask display all of the teachers and rooms in a data form (like this https://docs.replit.com/images/tutorials/26-pdf-report-generator/piechart_plots.png)

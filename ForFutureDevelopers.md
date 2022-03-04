@@ -168,13 +168,20 @@ W3.CSS is a css library that makes it theoretically easier to make mobile-first 
 
 
 
+# For future admins
+I don't knwo what the futre looks like for this project after I graduate. Maybe it  will fall to a student volunteer to maintain it, maybe it will fall to the tech interns, maybe it will fall to the IT department, or maybe it will just fall into unuse and fade away from history. 
+
+Whatever happens in the future, I'm going to try my best to make it as easy as possible to maintain it.
+
+So here I will include a guide on how to maintain, protect, and update this tool.
+
 
 
 ### Good Luck
 
 Now that I have imparted my knowledge, it is up to you to continue this resource. Thank you.
 
-Signed [Name protected], 02-08-2022
+Signed [Name protected], 02-09-2022
 
 If you ever need my help, you can reach me at [email protected]
 
@@ -183,10 +190,10 @@ If you ever need my help, you can reach me at [email protected]
 
 
 #### Future maintainers
-If you change the code in any large way, please, PLEASE add on to this documentation and add your name below
+If you change the code in any way, please, PLEASE add on to this documentation and add your name below
 
 
 
 ### Hall of Maintainers
 
-2021 - 2023  (Founder) [Name protected], 02-08-2022
+2021 - 2023  (Founder) [Name protected], 02-09-2022

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <script src="/script.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <title>Image Credits</title>
+
+</head>
+<body>
+  <a href="/images/math.jpg">"maths (55/365)" by Tim Geers is licensed under CC BY 2.0</a>
+
+</body>
+</html>
+<html>

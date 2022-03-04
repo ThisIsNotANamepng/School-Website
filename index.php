@@ -1,5 +1,5 @@
 <?php
-	header("Content-Security-Policy: img-src https://*; frame-ancestors 'self'; base-uri 'self';  form-action 'self';  font-src 'self';upgrade-insecure-requests; object-src https://School-Website.codeeatspennies.repl.co;");
+	header("Content-Security-Policy: img-src https://*; frame-ancestors 'self'; base-uri 'self';  form-action 'self';  font-src 'self'; upgrade-insecure-requests; object-src https://School-Website.codeeatspennies.repl.co;");
 
  // Policies that break search : default-src 'self'; script-src 'anything'; 
 ?>
@@ -20,13 +20,13 @@
 </head>
 
 <!-- Sidebar (hidden by default) -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px w3-theme-l4" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()"
   class="w3-bar-item w3-button w3-theme-d4 ">X</a>
   <a href="/search" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d2 w3-text-vivid-white">Search</a>
   <a href="/map" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d2 w3-text-vivid-white">Map</a>
+  <a href="/clusters/Clusters" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d2 w3-text-vivid-white">Class Clusters</a>
   <a href="/lowInternet" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d2 w3-text-vivid-white">Low internet page</a>
-
   <a href="https://oasd.org" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d2 w3-text-vivid-white">oasd.org</a>
   <a href="/about" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d1">About</a>
   <a href="https://forms.gle/MdS2EnYSyWjEdCBL9" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d1">Report a Problem</a>
@@ -34,9 +34,9 @@
 
 <!-- Top menu -->
 <div class="w3-top">
-  <div class="w3-xlarge w3-theme-d3" style="max-width:100%;margin:auto">
-    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-    <div class="w3-center w3-padding-16">OHS Map and Search    </div>
+  <div class="w3-xlarge navBar" style="max-width:100%;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left openButton" onclick="w3_open()" style="color: #D7D4DD">☰</div>
+    <div class="w3-center w3-padding-16 title lat"><a href="/index.php">OHS Map and Search    </a></div>
   </div>
 </div>
   

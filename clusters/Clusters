@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Computer Science Cluster</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  </head>
+  <body onload="showNavbar()">
+    <script src="script.js"></script>
+
+
+    <div class="w3-container classescon w3-left w3-half">
+      <ul class="w3-ul w3-grey la">
+        <li><a href="/clusters/computerscience/elementsofgamedesign">Elements of Game Design</a></li>
+        <li><a href="/clusters/computerscience/computersciencediscoveries">Computer Science Discoveries</a></li>
+        <li><a href="/clusters/computerscience/APcomputerscienceprinciples">AP Computer Science Principles</a></li>
+        <li><a href="/clusters/computerscience/APcomputerscienceA">AP Computer Science A</a></li>
+        <li><a href="/clusters/computerscience/TCprogrammingfortheweb">TC Programming for the Web</a></li>
+        <li><a href="/clusters/computerscience/TCmobileappdevelopment">TC Mobile App Development</a></li>
+        <li><a href="/clusters/computerscience/techinternship">Tech Internship</a></li>
+
+        <style>
+        a {
+          display: block;
+        }
+        
+        a:link {
+          text-decoration: none;
+        }
+        
+        a:visited {
+          text-decoration: none;
+        }
+        
+        a:hover {
+          text-decoration: none;
+        }
+        </style>
+      </ul>
+    </div>
+
+    <div class="w3-container classescon w3-right w3-half">
+      <ul class="w3-ul w3-grey">
+        <li><a href="/teachers/a-fischer">aaron Fischer</a></li>
+
+
+      </ul>
+    </div>
+
+  </body>
+</html>

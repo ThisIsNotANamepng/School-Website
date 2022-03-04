@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <script src="/script.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <title>Room Number</title>
+
+</head>
+<body>
+
+<div class="w3-container w3-center dataTitle">
+  <h1>Room Number</h1>
+</div>
+<div class="w3-container w3-left">
+  <h3>Subject(s) taught: English</h3>
+  <h3>Classes taught: IB English, English 10, English 11</h3>
+  <h3>Teachers: Teacher Name</h3>
+  <h3>Campus: Main</h3>
+  <h3>Wing: North</h3>
+</div>
+
+</body>
+</html>
+<html>

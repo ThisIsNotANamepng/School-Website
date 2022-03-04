@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Business and Marketing Cluster</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+
+
+    
+    <div class="w3-container classescon w3-left w3-half">
+      <ul class="w3-ul w3-grey la">
+        <li><a href="/clusters/business/careerinternship">Career Internship</a></li>
+        <li><a href="/clusters/business/careerportfolio">Career Portfolio</a></li>
+        <li><a href="/clusters/business/educationinternship">Education Internship</a></li>
+        <li><a href="/clusters/business/finanaceyouthapprenticeship">Finance Youth Appresnticeship</a></li>
+        <li><a href="/clusters/business/hospitalityyouthapprenticeship">Hospitality Youth Apprenticeship</a></li>
+        <li><a href="/clusters/HSBbusinesseconomics">HSB Business Economics</a></li>
+        <li><a href="/clusters/business/HSBbusinessstrategies">HSB Business Strategies</a></li>
+        <li><a href="/clusters/business/HSBprinciplesofbusiness">HSB Principles of Business</a></li>
+        <li><a href="/clusters/business/HSBprinciplesoffinance">HSB Principles of Finance</a></li>
+        <li><a href="/clusters/business/HSBprinciplesofmanagement">HSB Principles of Management</a></li>
+        <li><a href="/clusters/business/HSBprinciplesofmarketing">HSB Principles of Marketing</a></li>
+        <li><a href="/clusters/business/IBpersonalandprofessionlskills1">IB Personal and Professional Skills 1: Career Portfolio</a></li>
+        <li><a href="/clusters/business/IBpersonalandprofessionlskills2">IB Personal and Professional Skills 2</a></li>
+        <li><a href="/clusters/business/introductiontoaccounting">Introduction to Accounting</a></li>
+        <li><a href="/clusters/business/marketingyouthapprenticeship">Marketing Youth Apprenticeship</a></li>
+        <li><a href="/clusters/business/personalfinance">Personal Finance</a></li>
+        <li><a href="/clusters/business/TCsocialmediamarketing">TC Social Media Marketing</a></li>
+        <li><a href="/clusters/business/sportsandentertainmentmarketing">Sports and Entertainment Marketing</a></li>
+        <li><a href="/clusters/business/TCcollegeaccounting">TC College Accounting</a></li>
+        <li><a href="/clusters/business/TChospitality">TC Hospitality</a></li>
+        <li><a href="/clusters/business/TCmicrosoftwordandpowerpoint">TC Microsoft Word and Powerpoint</a></li>
+        <li><a href="/clusters/business/TCmicrosoftexcelandquickbooks">TC Microsoft Excel and Quickbooks</a></li>
+        <li><a href="/clusters/business/TCwebdesign">TC Web Design</a></li>
+        <li><a href="/clusters/business/yearbook">Yearbook</a></li>
+
+
+        <style>
+        a {
+          display: block;
+        }
+        
+        a:link {
+          text-decoration: none;
+        }
+        
+        a:visited {
+          text-decoration: none;
+        }
+        
+        a:hover {
+          text-decoration: none;
+        }
+        </style>
+      </ul>
+    </div>
+
+    <div class="w3-container classescon w3-right w3-half">
+      <ul class="w3-ul w3-grey">
+        <li><a href="/teachers/a-fischer">aaron Fischer</a></li>
+
+
+      </ul>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Language Cluster</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+
+
+    
+    <div class="w3-container classescon w3-left w3-half">
+      <ul class="w3-ul w3-grey la">
+        <li><a href="/clusters/teched/buildingtrades1">Building Trades 1</a></li>
+        <li><a href="/clusters/teched/buildingtrades2">Building Trades 2</a></li>
+        <li><a href="/clusters/teched/buildingtrades3">Building Trades 3</a></li>
+        <li><a href="/clusters/teched/digitalproductions">Digital Productions</a></li>
+        <li><a href="/clusters/teched/oconmanufacturing1">OCONManufacturing 1</a></li>
+        <li><a href="/clusters/teched/oconmanufacturing2">OCONmanufacturing 2</a></li>
+        <li><a href="/clusters/teched/advancedwelding">Advanced Welding</a></li>
+        <li><a href="/clusters/teched/introductiontoengineeringdesign">Introduction to Engineering Design</a></li>
+        <li><a href="/clusters/teched/principlesofengineering">Principles of Engineering</a></li>
+        <li><a href="/clusters/civilengineeringandarchitecture">Civil Engineering and Architecture</a></li>
+        <li><a href="/clusters/teched/digitalelectronics">Digital Electronics</a></li>
+        <li><a href="/clusters/teched/computerintegratedmanufacturing">Computer Integrated Manufacturing</a></li>
+        <li><a href="/clusters/teched/engineeringdesignanddevelopment">Engineering Design and Development</a></li>
+        <li><a href="/clusters/teched/oconfablab">OCONFABLAB</a></li>
+        <li><a href="/clusters/teched/industrialdesign">Industrial Design</a></li>
+        <li><a href="/clusters/teched/consumerauto">Consumer Auto</a></li>
+        <li><a href="/clusters/teched/consumerautofemalesonly">Consumer Auto (Female Only)</a></li>
+        <li><a href="/clusters/teched/auto1">Auto 1</a></li>
+        <li><a href="/clusters/teched/auto2">Auto 2</a></li>
+        <li><a href="/clusters/teched/auto3">Auto 3</a></li>
+
+
+        <style>
+        a {
+          display: block;
+        }
+        
+        a:link {
+          text-decoration: none;
+        }
+        
+        a:visited {
+          text-decoration: none;
+        }
+        
+        a:hover {
+          text-decoration: none;
+        }
+        </style>
+
+
+
+      </ul>
+    </div>
+
+    <div class="w3-container classescon w3-right w3-half">
+      <ul class="w3-ul w3-grey">
+        <li><a href="/teachers/a-fischer">aaron Fischer</a></li>
+
+
+      </ul>
+    </div>
+
+  </body>
+</html>

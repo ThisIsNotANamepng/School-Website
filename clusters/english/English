@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>English Cluster</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+
+
+    
+    <div class="w3-container classescon w3-left w3-half">
+      <ul class="w3-ul w3-grey la">
+        <li><a href="/clusters/english/english9">English 9</a></li>
+        <li><a href="/clusters/english/accenglish9">Accelerated English 9</a></li>
+        <li><a href="/clusters/english/english10">English 10</a></li>
+        <li><a href="/clusters/english/accenglish10">Accelerated English 10</a></li>
+        <li><a href="/clusters/english/english11">English 11</a></li>
+        <li><a href="/clusters/english/APenglishlanguageandcomposition">AP English Language And Composition</a></li>
+        <li><a href="/clusters/english/IBenglish1HL">IB English 1 HL</a></li>
+        <li><a href="/clusters/english/IBenglish2HL">IB English 2 HL</a></li>
+        <li><a href="/clusters/english/english12">English 12</a></li>
+        <li><a href="/clusters/english/APenglishliteratureandcomposition">AP English Literature And Composition</a></li>
+        <li><a href="/clusters/english/interculturalcommunication">Intercultural Communication</a></li>
+        <li><a href="/clusters/english/contemporarynonfiction">Contemporary Nonfiction</a></li>
+        <li><a href="/clusters/english/creativewriting">Creative Writing</a></li>
+        <li><a href="/clusters/english/literatureandfilmtheory">Literature And Film Theory</a></li>
+        <li><a href="/clusters/english/seminardigitalcommunications">Seminar Digital Communications</a></li>
+        <li><a href="/clusters/english/IBextendedessay">IB Extended Essay</a></li>
+        <li><a href="/clusters/english/digitalproductions">Digital Productions</a></li>
+
+
+        <style>
+        a {
+          display: block;
+        }
+        
+        a:link {
+          text-decoration: none;
+        }
+        
+        a:visited {
+          text-decoration: none;
+        }
+        
+        a:hover {
+          text-decoration: none;
+        }
+        </style>
+      </ul>
+    </div>
+
+    <div class="w3-container classescon w3-right w3-half">
+      <ul class="w3-ul w3-grey">
+        <li><a href="/teachers/a-fischer">aaron Fischer</a></li>
+
+
+      </ul>
+    </div>
+
+  </body>
+</html>
