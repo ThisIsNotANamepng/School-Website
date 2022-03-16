@@ -38,3 +38,5 @@ Add a low-internet page, map is loaded statically, search doesen't work
 Admin alert system which emails certain admins if the database is changed or  there are a suspiciously high number of visitors or if the website is under heavy load or if the website is down
 
 Admin page ask display all of the teachers and rooms in a data form (like this https://docs.replit.com/images/tutorials/26-pdf-report-generator/piechart_plots.png)
+
+Add a site map

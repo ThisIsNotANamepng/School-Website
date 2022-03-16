@@ -3,6 +3,12 @@
   font-family: Poppins;
 }
 
+.dyslexia{
+  background-color: #020066;
+  color: #ffffff;
+  
+}
+
 .la {
   display: block;
 }
@@ -25,15 +31,26 @@
 
 .navBar{
   background-color: #333F63;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+
 }
 body {
   background-color: #715C8C;
   margin: 0;
+  word-wrap: break-word;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+
+
+
 
 }
 
 html, body {
   height: 100%;
+  font-size: 1.2em;
+
 }
 
 .full-height {
@@ -42,28 +59,38 @@ html, body {
 
 .title {
   color: #D7D4DD;
+  font-size: 1.5em;
+
 }
 
 h1{
-  font-family: Poppins;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  font-size: 1.5em;
+
   color: #D7D4DD;
 
 }
 
 h2{
-  font-family: Poppins;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+
 }
 
 h3{
-  font-family: Poppins;
+  font-family: Arial, Helvetica, sans-serif;
   color: #D7D4DD;
+  font-size: 1.2em;
+
 
 }
 
 p{
-  font-family: Poppins;
+  font-family: Arial, Helvetica, sans-serif;
   color: #D7D4DD;
+  font-size: 1.2em;
+
 }
 
 .se{
@@ -97,11 +124,15 @@ p{
   background:rgba(50, 50, 50, 0.2);
   color: #D7D4DD;
   float: center;
+  font-size: 1.2em;
+
 
 }
 
 #livesearch{
-  font-family: Poppins;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+
 }
 
 #results{
@@ -112,7 +143,7 @@ p{
   float: left;
   background-color: F0D265;
   font-size: 1.5em;
-  font-family: Poppins;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -120,19 +151,22 @@ a:link, a:visited {
 }
 
 .footer {
-  background-color: #000000;
+  background-color: #d1a400;
   padding: 0px;
   text-align: center;
   width: 100%;
+  font-size: 1.2em;
+
 }
 
 .bottomLinks {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9em;
+  font-size: 1em;
   width: 75%;
   margin: auto;
   padding: 5px;
+  
 
 }
 
@@ -141,6 +175,8 @@ a:link, a:visited {
   margin: auto;
   padding: 10px;
   position: ablosulte;
+  font-size: 1.2em;
+
 
 }
 
@@ -174,6 +210,8 @@ iframe {
   width: 50%;
   height: 100%;
 }
+
+
 
 .w3-theme-light {color:#000 !important; background-color:#f6f4f9 !important}
 .w3-theme-dark {color:#fff !important; background-color:#332a46 !important}

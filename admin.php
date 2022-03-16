@@ -23,7 +23,7 @@ if(isset($_POST['page_logout']))
 
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="admin.css">
+<link rel="stylesheet" type="text/css" href="css/admin.css">
 <title>Admin</title>
 </head>
 <body>

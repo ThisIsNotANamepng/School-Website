@@ -3,52 +3,122 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Computer Science Cluster</title>
+    <title>Cluster</title>
     <link href="/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="/script.js"></script>
+
 
   </head>
-  <body onload="showNavbar()">
-    <script src="script.js"></script>
+  <body>
+    <div id="navvbar"></div>
+    
+    <div class="grid-container">
+      <div class="explanation w3-center">
+        <h2>Class Clusters</h2>
+      </div>
+      <div class="english w3-half w3-left"><a href="/clusters/english/English">English</a></div>
+      <div class="math w3-right w3-half"><a href="/clusters/english/English">English</a></div>
 
+      <div class="arts w3-left w3-half"><a href="/clusters/english/English">English</a></div>  
 
-    <div class="w3-container classescon w3-left w3-half">
-      <ul class="w3-ul w3-grey la">
-        <li><a href="/clusters/computerscience/elementsofgamedesign">Elements of Game Design</a></li>
-        <li><a href="/clusters/computerscience/computersciencediscoveries">Computer Science Discoveries</a></li>
-        <li><a href="/clusters/computerscience/APcomputerscienceprinciples">AP Computer Science Principles</a></li>
-        <li><a href="/clusters/computerscience/APcomputerscienceA">AP Computer Science A</a></li>
-        <li><a href="/clusters/computerscience/TCprogrammingfortheweb">TC Programming for the Web</a></li>
-        <li><a href="/clusters/computerscience/TCmobileappdevelopment">TC Mobile App Development</a></li>
-        <li><a href="/clusters/computerscience/techinternship">Tech Internship</a></li>
+      <div class="business w3-right w3-half"><a href="/clusters/business/Business">Business</a></div>
 
-        <style>
-        a {
-          display: block;
-        }
-        
-        a:link {
-          text-decoration: none;
-        }
-        
-        a:visited {
-          text-decoration: none;
-        }
-        
-        a:hover {
-          text-decoration: none;
-        }
-        </style>
-      </ul>
+      <div class="computerscience w3-left w3-half"><a href="/clusters/computerscience/Computerscience">Computer Science</a></div>
+
+      <div class="language w3-half w3-right"><a href="/clusters/language/Language">Language</a></div>
+
+      <div class="physicalfitness w3-half w3-left"><a href="/clusters/psychicalfitness/Psychicalfitness">Physical Fitness</a></div>
+
+      <div class="science w3-half w3-right"><a href="/clusters/science/Science">Science</a></div>
+
+      <div class="teched w3-half w3-left"><a href="/clusters/teched/Teched">Technology Education</a></div>
+
+      <div class="socialstudies w3-half w3-right"><a href="/clusters/socialstudies/Socialstudies">Social Studies</a></div>
+
     </div>
 
-    <div class="w3-container classescon w3-right w3-half">
-      <ul class="w3-ul w3-grey">
-        <li><a href="/teachers/a-fischer">aaron Fischer</a></li>
+
+    <style>
+    a {
+      display: block;
+      height: 100%;
+    }
+    
+    a:link {
+      text-decoration: none;
+    }
+    
+    a:visited {
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: none;
+    }
+    .grid-container{
+      height: 100%;
+    }
+    .explanation{
+      wdith: 100%;
+      height: 25%;
+    }
+    .english{
+      background-color: red;
+      height: 15%;
+    }
+    .arts{
+      background-color: green;
+      height: 15%;
+    }
+    .math{
+      background-color: green;
+      height: 15%;
+    }
+    .business{
+      background-color: red;
+      height: 15%;
+    }
+    .computerscience{
+      background-color: red;
+      height: 15%;
+    }
+    .language{
+      background-color: green;
+      height: 15%;
+    }
+    .math{
+      background-color: green;
+      height: 15%;
+    }
+    .physicalfitness{
+      background-color: green;
+      height: 15%;
+    }
+    .science{
+      background-color: red;
+      height: 15%;
+    }
+    .teched{
+      background-color: red;
+      height: 15%;
+    }
+    .socialstudies{
+      background-color: green;
+      height: 15%;
+    }
+
+    body{
+      width: 100%;
+      height: 100%;
+    }
+    html{
+      height: 100%;
+    }
+
+    </style>
 
 
-      </ul>
-    </div>
 
   </body>
 </html>

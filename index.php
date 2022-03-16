@@ -9,8 +9,8 @@
   <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="script.js"></script>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="/script.js"></script>
   <meta name="mobile-web-app-capable" content="yes">
   <title>Map of OHS</title>
 
@@ -26,17 +26,32 @@
   <a href="/search" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d2 w3-text-vivid-white">Search</a>
   <a href="/map" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d2 w3-text-vivid-white">Map</a>
   <a href="/clusters/Clusters" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d2 w3-text-vivid-white">Class Clusters</a>
-  <a href="/lowInternet" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d2 w3-text-vivid-white">Low internet page</a>
+  <a href="/lowinternet" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d2 w3-text-vivid-white">Low internet page</a>
   <a href="https://oasd.org" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d2 w3-text-vivid-white">oasd.org</a>
   <a href="/about" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d1">About</a>
   <a href="https://forms.gle/MdS2EnYSyWjEdCBL9" onclick="w3_close()" class="w3-bar-item w3-button w3-theme-d1">Report a Problem</a>
+  <div class="w3-bar-item w3-theme-d1" style="width:40%;min-width:300px;word-wrap: break-word;">
+  <button id="default" style="word-wrap: break-word;" type="button" class="w3-button default" onclick="themeDefault()">Default Style</button><br>
+  <button id="dyslexia" type="button" class="w3-button dyslexia" onclick="themeDyslexia()">Dyslexia-Friendly Style</button><br>
+  <button id="protanomaly" type="button" class="w3-button protanomaly" onclick="themeProtanomaly()">Protanomaly (red-green) Friendly Style</button><br>
+  <button id="tritanomaly" type="button" class="w3-button tritanomaly" onclick="themeTritanomaly()">Tritanomaly (blue-yellow) Friendly Style</button><br>
+  <!--<button id="autism" type="button" class="w3-button" onclick="themeAutism()">Autism Friendly Style</button><br>-->
+
+    <!--FIIP: put autism buton with dyslexia to make the buttons cascading down in width-->
+    
+    <!--FIIP: Make buttons wrap to the next line for smaller screnens, laptops stay the same-->
+    
+
+  </div>
+    
+
 </nav>
 
 <!-- Top menu -->
 <div class="w3-top">
   <div class="w3-xlarge navBar" style="max-width:100%;margin:auto">
     <div class="w3-button w3-padding-16 w3-left openButton" onclick="w3_open()" style="color: #D7D4DD">☰</div>
-    <div class="w3-center w3-padding-16 title lat"><a href="/index.php">OHS Map and Search    </a></div>
+    <div class="w3-center w3-padding-16 title lat"><a href="/">OHS Map and Search    </a></div>
   </div>
 </div>
   
@@ -58,7 +73,7 @@ fclose($myfile);
 
 <div class='se'>
 <form class="bigSearch">
-<input spellcheck="false" id="search" type="text" size="30" onkeyup="showResult(this.value)" placeholder="Search for a room number or a teacher..."/autofocus><br>
+<input class="bar" spellcheck="false" id="search" type="text" size="30" onkeyup="showResult(this.value)" autofocus placeholder="Search for a room number or a teacher..."><br>
 </form>
 </div>
 

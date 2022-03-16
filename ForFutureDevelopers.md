@@ -9,7 +9,7 @@ We talked to the Computer Science teacher, the IT department, the school marketi
 
 And now it's yours
 
-## The search bar & results
+## index.php
 The search bar is a generic html search bar with css attatched. It's attatched to 
 
     <div class='se'>
@@ -19,7 +19,13 @@ Results appear in the empty
 
     <div id="livesearch"></div>
 
-Right now the results appear each with a background, which is set to a width of 90something% of the screen, in an attempt to be friendly to different screen wdiths
+Right now the results appear each with a background, which is set to a width of 90something% of the screen, in an attempt to be friendly to different screen widths
+
+### Accessibility
+One of the goals of this project was to make it as accessible as possible, so I decided to add dyslexia, autism, and color blindness-specific css pages. The buttons that change this are in the sidebar. When a button is clicked, a js script runs which changes which stylesheet is used. The button ids are the first word of the condition lowercase. For example, the button that is "Dyslexia-Friendly" is shortened to 'dyslexia' for it's id. The javascript that runs is in script.js (see more in the script.js section)
+
+#### Dyslexia-Friendly
+For a site sensitive to dyslexia, I my researched uncovered that 
 
 ## livesearch.php
 livesearch.php is the php file that sorts through the xml database and returns the results. 
@@ -68,6 +74,13 @@ Or you could change the css id like this
 script.js handles search requests from the php page and hands them off to livesearch.php, and vice versa. This means it can affect how the search items are shown on the php page and can sort through requests
 
 The string 'str' is the searched string 
+
+### Accessibility Scripts
+
+The accessibility scripts are scripts of js in script.js which run when the corresponding button in index.php is clicked. They change the stylesheet that the user is using (See the index.php section for more details). Each button has it's own function. Each function is named "theme[condition]", for example, when the button for dyslexia is clicked, the function "themeDyslexia" runs. 
+
+it's ('link')[1] because style.css is the second <link> element in <head> of index.php. If more <link> elemets were added, subtracted, or moved around the number would hvae to be adjusted
+
 
 ## Database
 
@@ -163,6 +176,16 @@ Using W3.CSS came about from feeling the despair of trying to get the frontend t
 W3.CSS is a css library that makes it theoretically easier to make mobile-first websites. I'm not going to try to explain it but here's the homepage for all of the documentation -> https://www.w3schools.com/w3css/defaulT.asp
 
 ## Map
+
+The map was tricky
+
+There are a few versions of the map floating around, the only slightly usable one was a proposed renovation plan from 2016. It had a few extra rooms, a few missing rooms, and a lot of mislabled rooms. I used GIMP (https://www.gimp.org/) to edit the jpg manually. It was a lot of work. 
+
+
+## Miscellaneous
+
+### FIIP
+FIIP is my shorthand for "Fxi it in post" ((https://www.filmmakingstuff.com/fix-it-in-post/)), a shorthand for filmakers to signal that they'll fix something in the scene later with special effects. I use it mostly as a note to myself to fix a probem later (usually gui problems) 
 
 
 
