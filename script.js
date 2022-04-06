@@ -44,7 +44,7 @@ function themeTritanomaly() {
 }
 function themeDefault() {
   var theme = document.getElementsByTagName('link')[1];
-  theme.setAttribute('href', 'css/style.css');
+  theme.setAttribute('href', '/style.css');
 }
 
 //FIIP: set cookie with style theme

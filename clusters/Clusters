@@ -15,26 +15,26 @@
     
     <div class="grid-container">
       <div class="explanation w3-center">
-        <h2>Class Clusters</h2>
+        <h1>Class Clusters</h1>
       </div>
-      <div class="english w3-half w3-left"><a href="/clusters/english/English">English</a></div>
-      <div class="math w3-right w3-half"><a href="/clusters/english/English">English</a></div>
+      <div class="english w3-half w3-left"><a href="/clusters/english/English" style="background-color: #4F5165; color: #C0BCAF;">English</a></div>
+      <div class="math w3-right w3-half"><a href="/clusters/math/Math" style="background-color: #C0BCAF; color: #4F5165;">Math</a></div>
 
-      <div class="arts w3-left w3-half"><a href="/clusters/english/English">English</a></div>  
+      <div class="arts w3-left w3-half"><a href="/clusters/arts/Arts" style="background-color: #C0BCAF; color: #4F5165;">Arts</a></div>  
 
-      <div class="business w3-right w3-half"><a href="/clusters/business/Business">Business</a></div>
+      <div class="business w3-right w3-half"><a href="/clusters/business/Business" style="background-color: #4F5165; color: #C0BCAF;">Business</a></div>
 
-      <div class="computerscience w3-left w3-half"><a href="/clusters/computerscience/Computerscience">Computer Science</a></div>
+      <div class="computerscience w3-left w3-half"><a href="/clusters/computerscience/Computerscience" style="background-color: #4F5165; color: #C0BCAF;">Computer Science</a></div>
 
-      <div class="language w3-half w3-right"><a href="/clusters/language/Language">Language</a></div>
+      <div class="language w3-half w3-right"><a href="/clusters/language/Language" style="background-color: #C0BCAF; color: #4F5165;">Language</a></div>
 
-      <div class="physicalfitness w3-half w3-left"><a href="/clusters/psychicalfitness/Psychicalfitness">Physical Fitness</a></div>
+      <div class="physicalfitness w3-half w3-left"><a href="/clusters/psychicalfitness/Psychicalfitness" style="background-color: #C0BCAF; color: #4F5165;">Physical Fitness</a></div>
 
-      <div class="science w3-half w3-right"><a href="/clusters/science/Science">Science</a></div>
+      <div class="science w3-half w3-right"><a href="/clusters/science/Science" style="background-color: #4F5165; color: #C0BCAF;">Science</a></div>
 
-      <div class="teched w3-half w3-left"><a href="/clusters/teched/Teched">Technology Education</a></div>
+      <div class="teched w3-half w3-left"><a href="/clusters/teched/Teched" style="background-color: #4F5165; color: #C0BCAF;">Technology Education</a></div>
 
-      <div class="socialstudies w3-half w3-right"><a href="/clusters/socialstudies/Socialstudies">Social Studies</a></div>
+      <div class="socialstudies w3-half w3-right"><a href="/clusters/socialstudies/Socialstudies" style="background-color: #C0BCAF; color: #4F5165;">Social Studies</a></div>
 
     </div>
 

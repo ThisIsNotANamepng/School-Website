@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width" name="viewport"/>
+  <link href="/style.css" rel="stylesheet" type="text/css"/>
+  <script src="/script.js">
+  </script>
+  <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+  <title>
+   Teacher Name
+  </title>
+ </head>
+ <body>
+  <div class="w3-container w3-center dataTitle">
+   <h1>
+    Teacher Name
+   </h1>
+  </div>
+  <div class="w3-container w3-left">
+   <h3 id="subject">Subjects: Math</h3>
+   <h3 id="classes">Classes: Algebra 2, Acc Geometry</h3>
+   <h3 id="rooms">Rooms: 306</h3>
+   <h3 id="email">
+    Email: vykusyfveeeeeeeeeeeywku@chgcfjhkgj.com
+   </h3>
+  </div>
+  <div class="full-height">
+   <iframe class="embedded w3-right w3-half" height="100%" src="https://docs.google.com/document/d/e/2PACX-1vT21jaCo0KZdsl7Mlg0X5DeHuVt83CNut3So3NIGtyHo3hh7NGoYmYLrBOonSBfy3Qb9L26cEqKT10W/pub?embedded=true" style="border:none;" width="100%">
+   </iframe>
+  </div>
+ </body>
+</html>

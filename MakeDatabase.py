@@ -1,20 +1,14 @@
 #!/usr/bin/env python
-
+#This takes the xlsx file from /uploads, creates the xml file, 
 from xml.dom import minidom
 import os
 import openpyxl
 import xml.etree.ElementTree as gfg
 import glob
 from xml.etree import ElementTree
-import smtplib, ssl
+import json
 
 
-b = open('template.txt', 'r')
-bb = b.read()
-c = open('template2.txt', 'r')
-cc = c.read()
-d = open('template3.txt', 'r')
-dd = d.read()
 added = []
 removed = []
 path = "Data"
@@ -30,6 +24,7 @@ for file in glob.glob("uploads/*.xlsx"):
 
 wb_obj = openpyxl.load_workbook(path)
 sheet_obj = wb_obj.active
+ws = sheet_obj
  
 sheet_object = wb_obj.active
 max_rows = sheet_object.max_row#finding how many rows there are
@@ -52,13 +47,12 @@ while i <= max_rows:
         
         b1 = gfg.SubElement(m1, "data")
         b1.text = (cell_obj.value)
-        
-        print(cell_obj.value)
-        
+                
 
         searchThis = cell_obj.value
         teacherName = searchThis
         searchThis = searchThis.replace(" ", "")
+
         
 
         if searchThis in dir_list:
@@ -68,22 +62,7 @@ while i <= max_rows:
         else: 
           #create the html file 
           f = open((searchThis), "w")
-          #Copy template into file here
-          f.write(bb)
-          
-          f.close()
-          f = open((searchThis), "a")
-          f.write("  <title>"+teacherName+"</title>")
-          f.write("\n")
-          f.write(cc)
-          print("\n")
-          f.write("<h1>"+teacherName+"</h1>")
-          print("\n")
-          f.write(dd)
-          
-          
-          
-
+          #Write information into file here
 
           
           added.append(cell_obj.value)
@@ -96,31 +75,25 @@ while i <= max_rows:
 
   i = i+1
   
-b.close()
 
 
-print(added)
 
 
 
 tree = gfg.ElementTree(root)
-
-os.chdir('/home/runner/School-Website')
+#deletes old xml file
+os.chdir('../')
 os.remove('database.xml')
 with open ("database.xml", "wb") as files :
   tree.write(files)
 
-
-#delete uploaded file when finished
-os.remove(delete)
 
 
 tree = ElementTree.parse("database.xml")   
 olp = tree.findall(".//data")
 fileList = [t.text for t in olp]#fileList is a list of the pages in the database
 
-print(fileList)
-print(dir_list)#dir_list is a list of pages 
+#dir_list is a list of pages 
 #email-- take whatever item is being deleted from dir_list and match it with the one in fileList. For example, if Scott Bakkum was being removed you could email fileList[1] because it's the same as dir_list, just with spaces
 fileListt = []
 i = 0
@@ -141,17 +114,10 @@ while (i<len(dir_list)):#looping through dir_list and asking if each item is in 
     remove_list.append(dir_list[i])
   i=i+1
 
-print(remove_list)
 i = 0
 os.chdir("Data")
 while i<len(remove_list):#deletes all files in remove_list
   os.remove(remove_list[i])
   i = i+1
 
-
-
-
-
-
-
-
+import update

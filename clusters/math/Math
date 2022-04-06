@@ -56,7 +56,8 @@
 
     <div class="w3-container classescon w3-right w3-half">
       <ul class="w3-ul w3-grey">
-        <li><a href="/teachers/a-fischer">aaron Fischer</a></li>
+<!--teacher area-->
+        <li><a href="/Data/a-fischer">aaron Fischer</a></li>
 
 
       </ul>

@@ -25,7 +25,7 @@ Right now the results appear each with a background, which is set to a width of 
 One of the goals of this project was to make it as accessible as possible, so I decided to add dyslexia, autism, and color blindness-specific css pages. The buttons that change this are in the sidebar. When a button is clicked, a js script runs which changes which stylesheet is used. The button ids are the first word of the condition lowercase. For example, the button that is "Dyslexia-Friendly" is shortened to 'dyslexia' for it's id. The javascript that runs is in script.js (see more in the script.js section)
 
 #### Dyslexia-Friendly
-For a site sensitive to dyslexia, I my researched uncovered that 
+For a site sensitive to dyslexia, I my researched uncovered that certain fonts and a larger text size made it easier for people with dyslexia to read. I added this as a style option, along with various color blindness syndromes
 
 ## livesearch.php
 livesearch.php is the php file that sorts through the xml database and returns the results. 
@@ -124,6 +124,8 @@ and
 
 > https://content-security-policy.com/
 
+## 'Data' folder
+The Data folder holds all of the pages for teachers and rooms. Teacher pages are stored as the first two letters of their first name, a dash, and their full last name (all lowercase). For example, "Aaron Fisher" is stored as 'aa-fisher'
 
 ## MakeDatabase.py
 
@@ -135,6 +137,8 @@ Keep in mind, inspecting the admin page in your browser will show people the htm
 
 Now that I'm done, I realize that the script doesen't delete unused existing pages and doesen't create pages for room numbers (but I don't think creating new pages for room numbers is that nessacary because they don't change nearly as often)
 
+## update.py
+update.py updates the teacher pages and subject pages. It took a lot of work and a lot of if statemants. Because of the nature of the task it's tasked to do, it routinely fetches updated teacher details from the uploaded calendar, and stores them in convienently named variables. If you ever need to build something more which these details, I would suggest adding it onto update.py as I've already done the work of sifting through the calendar and finding these deatils for you. It's also a scalable file, and I've added other thing onto it as I create new things.
 
 
 ## Admin Page

@@ -1,6 +1,8 @@
 <?php
 	header("Content-Security-Policy: img-src https://*; frame-ancestors 'self'; base-uri 'self';  form-action 'self';  font-src 'self'; upgrade-insecure-requests; object-src https://School-Website.codeeatspennies.repl.co;");
 
+
+
  // Policies that break search : default-src 'self'; script-src 'anything'; 
 ?>
 
@@ -9,7 +11,7 @@
   <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="/style.css" rel="stylesheet" type="text/css" />
   <script src="/script.js"></script>
   <meta name="mobile-web-app-capable" content="yes">
   <title>Map of OHS</title>
