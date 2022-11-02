@@ -1,1 +1,39 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <title>Find map</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  </head>
+  <body>
+    Location (Room Number):  <input class="w3-input w3-border" type="text" id="locationID" value="250">
+    Destnatn (Room Number):  <input class="w3-input w3-border" type="text" id="destinationID" value="356">
+
+    <button onclick="readInput()">Submit</button>
+    
+    <p id="demo"></p>
+
+    
+    <script>
+
+    function readInput() {
+      var location = document.getElementById("locationID").value;
+      var destination = document.getElementById("destinationID").value;
+      var customImageurl = "https://MapMakerServer-stackoverflow-copiers.stackoverflow-copiers.repl.co/EnterCoordinates?location="+location+"&destination="+destination;//dd image url fropm server here
+      loadGraphics(customImageurl)
+    }
+    
+      function loadGraphics(url){
+        const img = document.querySelector("img"); 
+        img.src = url;
+      }
+
+
+    </script>
+
+    <div id="loadImage-wrap" class="w3-round w3-center">
+        <img class="w3-center" id="loadImage" />
+    </div>https://www.tutorialspoint.com/enter-key-press-event-in-javascript
+  </body>
+</html>

@@ -62,7 +62,6 @@
 $myfile = fopen("counter.txt", "r") or die("Unable to open file!");
 $count = fread($myfile,filesize("counter.txt"));
 fclose($myfile);
-echo $count;
 
 $myfile = fopen("counter.txt", "w") or die("Unable to open file!");
 $txt = $count + 1;
@@ -85,65 +84,69 @@ fclose($myfile);
 <h1>The search and map functions will not work without javascript<h1>
 </noscript>
 
-<!--<div id='map'></div>
-<script src="map.js"></script>
-Uncomment this to load the map
--->
+<div class="w3-container" id="inputStuff">
+  <div class="w3-left" id="locationInput">
+    <label id="locationLabel" for="locationID">Location</label><br>
+    <input class="w3-input w3-border w3-left" type="text" id="locationID" value="250">
+  </div>
+  <div class="w3-right" id="destinationInput">
+    <label id="destinationLabel" for="destinationID">Destination</label><br>
+    <input class="w3-input w3-border w3-right" type="text" id="destinationID" value="356">
+  </div>
+  <br><br>
+  <div id="LDSubmitButtonDiv" class="w3-center" style="margin:2%;">
+    <button id="LDSubmitButton" class="LDSubmitButton w3-button w3-white w3-border w3-border-purple w3-round-large" onclick="readInput()">Submit</button>
+  </div>
+  <p id="demo"></p>
 
+  <style>
+    #LDSubmitButton{
+      margin: 30px;
+      width: 40%;
+    
+    }
+    
+    @media (max-width: 800px) {
+    #LDSubmitButton{
+      margin: 10px;
+      width: 60%;
+      color: yellow;
+    }
+    }
+  </style>
+  <script>
+
+  function readInput() {
+    var location = document.getElementById("locationID").value;
+    var destination = document.getElementById("destinationID").value;
+    var customImageurl = "https://MapMakerServer-stackoverflow-copiers.stackoverflow-copiers.repl.co/EnterCoordinates?location="+location+"&destination="+destination;//dd image url fropm server here
+    loadGraphics(customImageurl)
+  }
+  
+    function loadGraphics(url){
+      const img = document.querySelector("img"); 
+      img.src = url;
+    }
+
+  </script>
+</div>
+
+    <div id="loadImage-wrap" class="w3-round w3-center">
+        <img class="w3-center" id="loadImage" />
+    </div>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
 
-<div class="w3-container">
-
-  <div class="w3-card-4" style="width:100%;">
-    <header class="w3-container w3-theme-d1">
-      <h1>Where to?</h1>
-    </header>
-
-    <div class="w3-container" style="text-align:center">
-      <p>Where is your room number destination?</p>
-      
-      <form class="w3-container" name="destinationForm">
-        <input class="w3-input w3-animate-input" type="number" style="width:50%; margin:auto; text-align:center" id="destinationBar" name="destinationBar">
-
-      </form>
-
-    </div>
 
 
-  </div>
-</div>
-
-<div class="submitButton">
-  <button onclick="set();" class="w3-button w3-black button submitbutton">Submit</button>
-</div
-
-
-<div class="w3-container">
-
-  <div class="w3-card-4" style="width:100%;">
-    <header class="w3-container w3-theme-d1">
-      <h1>Where are you?</h1>
-    </header>
-
-    <div class="w3-container" style="text-align:center">
-      <p>What is the room number closest to you?</p>
-    
-      <form class="w3-container" name="fromForm">
-        <input class="w3-input w3-animate-input" type="number" style="width:50%; margin:auto; text-align:center" id="fromBar" name="fromBar">
-      </form>
-    </div>
-
-
-  </div>
-</div>
 
 <br><br><br><br><br>
 <script>
 // Script to open and close sidebar
+  //https://www.tutorialspoint.com/enter-key-press-event-in-javascript
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
 }
@@ -152,19 +155,6 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
 }
 
-function set() {
-  // set this with the destination and from numbers
-  
-  cookievalue= escape(document.fromForm.fromBar.value) + ";";
-  document.cookie="from=" + cookievalue;
-
-  cookievaluee= escape(document.destinationForm.destinationBar.value) + ";";
-  document.cookie="destination=" + cookievaluee;
-
-  //add pop up saying that the destination and from was succesfully set
-
-
-}
 </script>
 
 
@@ -175,7 +165,7 @@ function set() {
   <div class="bottomLinks">
   <a href="https://github.com/Thisisntarelname/phpajaxxml" class="bottomLinks">Source </a>
   |
-  <a class="bottomLinks" href="forms.google.com"> Report an error </a>
+  <a class="bottomLinks" href="https://forms.google.com"> Report an error </a>
   |
   <a class="bottomLinks" href="/about.html"> Made by Fake Name and Name Fake</a>
   </div>

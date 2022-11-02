@@ -1,13 +1,23 @@
-# For future developers
+# For future developers - The Man Pages
+
 I know that I won't be around after I graduate to continue updating and developing this tool, so I have decided to write a comprehensive guide to the workings of this website, along with all of the blunders and successes I've made along the way as warnings for future maintainers
 
 We started the website on Replit.com, I don't know what you are using now, but that's where we started our humble beginnings. We spent a month looking at diffferent ways to search a database from a webpage. We tried JSON, SQL, Ajax, pure javascript, paid services, cloud computing. It took a long time. We finally landed on a php search with an xml database becasue it was the only thing that worked
 
 We looked at img maps, Google maps, pngs, embeding a paid service, OpenStreetMaps, and finally settled on the less elegant html camvas solution for the map portion
 
-We talked to the Computer Science teacher, the IT department, the school marketing director, Buildings and Grounds, and the principal. This project is the result of hundereds of hours of work, thousands of lines of code, countless web searches. 
+We talked to the Computer Science teacher, the IT department, the school marketing director, Buildings and Grounds, and the principal. This project is the result of hundereds of hours of work, thousands of lines of code, and countless web searches. 
 
 And now it's yours
+
+Good Luck
+
+You'll need it
+
+
+## Outline of the Entire Project
+Add the outline here
+
 
 ## index.php
 The search bar is a generic html search bar with css attatched. It's attatched to 
@@ -74,6 +84,8 @@ Or you could change the css id like this
 script.js handles search requests from the php page and hands them off to livesearch.php, and vice versa. This means it can affect how the search items are shown on the php page and can sort through requests
 
 The string 'str' is the searched string 
+
+script.js also handles switching css sheets for accessibility
 
 ### Accessibility Scripts
 
@@ -223,4 +235,4 @@ If you change the code in any way, please, PLEASE add on to this documentation a
 
 ### Hall of Maintainers
 
-2021 - 2023  (Founder) [Name protected], 02-09-2022
+2021 - 2023  (Founder) [Jack], 02-09-2022

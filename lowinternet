@@ -1,1 +1,33 @@
-Work in progress
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Low Internet-Map of OHS</title>
+</head>
+<div>
+  <div style="max-width:100%;margin:auto">
+    <div><a href="/">Home</a></div>
+  </div>
+</div>
+<body>
+<h3>The search function will use more internet, if you have a slow internet connection use the pre-loaded map</h3>
+<img src="/images/EmptyOHSMapUp.png"><br>
+Location (Room Number):  <input class="w3-input w3-border" type="text" id="locationID">
+Destination (Room Number):  <input class="w3-input w3-border" type="text" id="destinationID">
+<button onclick="readInput()">Submit</button>
+<script>
+function readInput() {
+  var location = document.getElementById("locationID").value;
+  var destination = document.getElementById("destinationID").value;
+  var customImageurl = "https://MapMakerServer-stackoverflow-copiers.stackoverflow-copiers.repl.co/EnterCoordinates?location="+location+"&destination="+destination;//dd image url fropm server here
+  loadGraphics(customImageurl)
+}
+function loadGraphics(url){
+  const img = document.querySelector("img"); 
+  img.src = url;
+}
+</script>
+<div id="loadImage-wrap">
+<img id="loadImage" />
+</div>
+</body>
+</html>
